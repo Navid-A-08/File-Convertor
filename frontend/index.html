@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Convertor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div class="logo">
+        <span class="logo__mark">⇄</span>
+        <span class="logo__text">File Convertor</span>
+      </div>
+      <p class="tagline">Images · Documents · Spreadsheets · Data · Archives · Audio</p>
+    </header>
+
+    <main class="card">
+      <div id="dropzone" class="dropzone">
+        <input type="file" id="fileInput" hidden>
+        <div class="dropzone__icon">📁</div>
+        <p class="dropzone__text">Drag &amp; drop a file here, or <button id="browseBtn" class="link-btn" type="button">browse</button></p>
+        <p class="dropzone__hint" id="uploadHint">Max 50MB</p>
+      </div>
+
+      <div id="fileInfo" class="file-info hidden">
+        <div class="file-info__row">
+          <span id="fileName" class="file-info__name"></span>
+          <button id="removeFile" class="icon-btn" type="button" title="Remove">✕</button>
+        </div>
+
+        <div class="form-row">
+          <label for="targetFormat">Convert to</label>
+          <select id="targetFormat"></select>
+        </div>
+
+        <div id="optionsPanel" class="options-panel hidden"></div>
+
+        <button id="convertBtn" class="primary-btn" type="button" disabled>Convert</button>
+      </div>
+
+      <div id="status" class="status hidden"></div>
+    </main>
+
+    <footer class="app__footer">
+      <a href="/api/formats" target="_blank" rel="noopener">View supported formats (API)</a>
+    </footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
