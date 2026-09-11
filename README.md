@@ -173,4 +173,4 @@ time.
 
 ## License
 
-MIT — use it, fork it, ship it.
+Free to use it, fork it, ship it.
