@@ -173,4 +173,4 @@ time.
 
 ## License
 
-Free to use it, fork it, ship it.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full text.
